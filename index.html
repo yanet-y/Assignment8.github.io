@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 8</title>
+    <style>
+     body{
+        margin: 10px;
+     }
+      .d1 {
+        display: inline;
+      }
+      .hello,.there {
+        border: 1px solid black;
+        text-align: center;
+        background-color: yellow;
+        padding: 5px;
+      }
+      .d2{
+        display: inline-block;
+        margin-bottom: 70px;
+      }
+      .hello1,.there1{
+        border: 1px solid black;
+        background-color: yellow;
+        padding-top: 5px;
+        padding-bottom: 80px;
+        padding-right: 70px;
+        padding-left: 5px;
+       
+      }
+      .d3{
+        display: block;
+      }
+      
+      .hello2,.there2 {
+        border: 1px solid black;
+        background-color: yellow;
+        width: 100px;
+        height: 100px;
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .green_button{
+        padding:10px;
+        background-color: green;
+        color: white;
+        border: 3px solid black;
+       
+      }
+      .green_button:hover{
+        background-color: white;
+        border: 3px solid green;
+        color: black;
+      }
+      .unordered_list{
+        background-color: yellow;
+        list-style: square;
+        width: 50%;
+        
+      }
+      li::marker { 
+        color: coral; 
+      }
+      
+      .d4{
+        position: relative;
+      }
+      .d4 h1{
+        position: absolute;
+        top: 5%;
+        left: 10px;
+
+      }
+      .d4 p{
+        position: absolute;
+        bottom: 30%;
+        left: 15px;
+      }
+      .d4 img{
+        z-index: -1;
+        width: 100px;
+        height: 150px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <button class="green_button">This is a link</button>
+
+    <ul class="unordered_list" >
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ul>
+
+    <div class="d4">
+      <img src="./image1.jpeg" alt="background image">
+      <h1>This is a heading</h1>
+      <p>Because the image has a z-index of -1, it will be placed behind the text</p>
+    </div>
+    
+
+    <h1>The Display Property</h1>
+    <h2>display: inline</h2>
+    <div class="d1">
+      <span>this is text</span>
+      <span>this is text</span>
+      <span>this is text</span>
+      <span class="hello">hello</span>
+      <span class="there">there</span>
+      <span>this is text</span>
+      <span>this is text</span>
+      <span>this is text</span>
+    </div>
+
+    <h2>display: inline-block</h2>
+    <div class="d2">
+      <span>this is text</span>
+      <span>this is text</span>
+      <span>this is text</span>
+      <span class="hello1">hello</span>
+      <span class="there1">there</span>
+      <span>this is text</span>
+      <span>this is text</span>
+      <span>this is text</span>
+    </div>
+
+    <h2>display: block</h2>
+    <div class="d3">
+      <span>this is text</span>
+      <span>this is text</span>
+      <span>this is text</span>
+      <p class="hello2">hello</p>
+      <p class="there2">there</p>
+      <span>this is text</span>
+      <span>this is text</span>
+      <span>this is text</span>
+    </div>
+  </body>
+</html>
